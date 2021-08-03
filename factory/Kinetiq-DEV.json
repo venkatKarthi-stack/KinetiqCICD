@@ -1,0 +1,9 @@
+{
+	"name": "Kinetiq-DEV",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fa4f9a99-53a2-4143-8278-994db0edaf0b",
+		"tenantId": "ed6d06e9-4ca6-4317-ab41-b01e84f9147a"
+	}
+}
