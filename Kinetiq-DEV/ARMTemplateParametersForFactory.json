@@ -4,6 +4,12 @@
 	"parameters": {
 		"factoryName": {
 			"value": "Kinetiq-DEV"
+		},
+		"LS_AzureBlobStorage_properties_typeProperties_connectionString_secretName": {
+			"value": "secret-sa-sakinetiqdev"
+		},
+		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://KV-Kinetiq-DEV.vault.azure.net/"
 		}
 	}
 }

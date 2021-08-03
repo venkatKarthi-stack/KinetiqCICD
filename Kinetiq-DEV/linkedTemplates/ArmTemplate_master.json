@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "Kinetiq-DEV"
 		},
+		"LS_AzureBlobStorage_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "secret-sa-sakinetiqdev"
+		},
+		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://KV-Kinetiq-DEV.vault.azure.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +41,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
+						"value": "[parameters('LS_AzureKeyVault_properties_typeProperties_baseUrl')]"
+					},
+					"LS_AzureBlobStorage_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('LS_AzureBlobStorage_properties_typeProperties_connectionString_secretName')]"
 					}
 				}
 			},
