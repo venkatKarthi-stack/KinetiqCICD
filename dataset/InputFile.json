@@ -1,0 +1,55 @@
+{
+	"name": "InputFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "insert.xlsx",
+				"folderPath": "Input",
+				"container": "input"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "Territory",
+				"type": "String"
+			},
+			{
+				"name": "Channel",
+				"type": "String"
+			},
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "Time (Minute)",
+				"type": "String"
+			},
+			{
+				"name": "Average Audience (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TV Rating (%)",
+				"type": "String"
+			},
+			{
+				"name": "Share (%) ",
+				"type": "String"
+			}
+		]
+	}
+}
